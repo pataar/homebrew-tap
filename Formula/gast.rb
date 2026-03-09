@@ -5,20 +5,20 @@
 class Gast < Formula
   desc "GitLab Activity Stream TUI"
   homepage "https://github.com/pataar/gast"
-  version "1.0.3"
+  version "1.0.4"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/pataar/gast/releases/download/v1.0.3/gast_1.0.3_darwin_amd64.tar.gz"
-      sha256 "56d74a534f2e37fc11845874872e92bada4cde6db6764a6f63bf21cef090b671"
+      url "https://github.com/pataar/gast/releases/download/v1.0.4/gast_1.0.4_darwin_amd64.tar.gz"
+      sha256 "48540d15e824f65f14e6fa77c12bb4c438e3ef14d996c0387ef1ebaba5c47e9b"
 
       define_method(:install) do
         bin.install "gast"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/pataar/gast/releases/download/v1.0.3/gast_1.0.3_darwin_arm64.tar.gz"
-      sha256 "47757d9841939b74e07dce33861340a12d0816261cfcb69dd1367e7f0f14b66e"
+      url "https://github.com/pataar/gast/releases/download/v1.0.4/gast_1.0.4_darwin_arm64.tar.gz"
+      sha256 "66aa087acfa9c0256a19da48870a958c5f35e89904e49ac917cb0a77b536fdc8"
 
       define_method(:install) do
         bin.install "gast"
@@ -28,15 +28,15 @@ class Gast < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/pataar/gast/releases/download/v1.0.3/gast_1.0.3_linux_amd64.tar.gz"
-      sha256 "6d027b4f36b8562c4a8f55c0e0b38b7aca18f81081f45b8b2579cc8292d065a5"
+      url "https://github.com/pataar/gast/releases/download/v1.0.4/gast_1.0.4_linux_amd64.tar.gz"
+      sha256 "27385a48664d4bdc2a2eed97825b31600212e0987f075462caa36c0eae32f313"
       define_method(:install) do
         bin.install "gast"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/pataar/gast/releases/download/v1.0.3/gast_1.0.3_linux_arm64.tar.gz"
-      sha256 "f1993a2894f4595b157bdbe456ee5e1a49982bb193d9a0eb3cae6f6c2f64a0c1"
+      url "https://github.com/pataar/gast/releases/download/v1.0.4/gast_1.0.4_linux_arm64.tar.gz"
+      sha256 "c256bb6b0a4a745fbe8b7c89644da18e6b833c88f901a103a5e368ba0f3cc32b"
       define_method(:install) do
         bin.install "gast"
       end
