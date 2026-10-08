@@ -1,25 +1,25 @@
 class Postbode < Formula
   desc "A fast, simple mail client with automatic mailbox rules"
-  homepage "https://github.com/pataar/postbode"
-  version "0.1.0"
+  homepage "https://postbode.pataar.nl/"
+  version "0.2.0"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/pataar/postbode/releases/download/v0.1.0/postbode-aarch64-apple-darwin.tar.xz"
-      sha256 "e7f1af018191341b567dca4d75ccb98639a0cba172c5aeca97f46dce04934481"
+      url "https://github.com/pataar/postbode/releases/download/v0.2.0/postbode-aarch64-apple-darwin.tar.xz"
+      sha256 "000e8eaebfcc3fcdc93967b1c1196ea2ea3a5468afef2969e72633b469a32d5b"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/pataar/postbode/releases/download/v0.1.0/postbode-x86_64-apple-darwin.tar.xz"
-      sha256 "b25465300a9dcf6ac689ffcfdbc60d2399aa48ff9c1b71783d5eb150735115aa"
+      url "https://github.com/pataar/postbode/releases/download/v0.2.0/postbode-x86_64-apple-darwin.tar.xz"
+      sha256 "b4d6d4aeb1ebaee1f0ff305eff15711d6937191d85bf767ec59e16e8c748b23d"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/pataar/postbode/releases/download/v0.1.0/postbode-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "fea6789bdd4144b2dcb9c9fc52c920787fc446c76ef9cd22b80947ff4cf8a019"
+      url "https://github.com/pataar/postbode/releases/download/v0.2.0/postbode-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "de9448fdf10eaefe004d109f339013c6ac89429a8a21491b65b105949a37b1e6"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/pataar/postbode/releases/download/v0.1.0/postbode-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "253014245698e4139278ec5789ae898d38d0800cabf4900de34ea5037f5986e8"
+      url "https://github.com/pataar/postbode/releases/download/v0.2.0/postbode-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "b53f858c802d101afdac183ed0907c11823da1ca7489f617b7320e857f651197"
     end
   end
   license any_of: ["MIT", "Apache-2.0"]
